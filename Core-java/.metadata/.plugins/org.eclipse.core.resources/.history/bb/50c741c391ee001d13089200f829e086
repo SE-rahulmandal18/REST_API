@@ -1,0 +1,14 @@
+package com.simpli.fruits;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+		
+		   Apple apple1 = new Apple();
+		   
+		  // System.out.println("Apple's price= "+ apple1.price));
+		   
+		   System.out.println("Apple's weigth= "+ apple1.weight);
+	}
+
+}

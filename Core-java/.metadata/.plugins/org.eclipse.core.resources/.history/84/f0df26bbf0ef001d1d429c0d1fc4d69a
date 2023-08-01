@@ -1,0 +1,33 @@
+package com.simpli;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexMain {
+
+	public static void main(String[] args) {
+		String str = "Regular ERRRxpressions CAT DOg";
+		
+		// check for all lowercase letters
+		// String patternStr = "[a-z]+";
+		
+		Pattern pattern = Pattern.compile("[A-Z5-9]+");
+		Matcher matcher = pattern.matcher(str);
+		
+		//System.out.println(" Matcher found something match? : "+ matcher.find());
+		
+		while(matcher.find()) {
+//			int start = matcher.start();
+//			int end = matcher.end();
+//			
+//			System.out.println(str.substring(start,end));
+			
+			System.out.println("Found a match!");
+		};
+		
+		
+	
+
+	}
+
+}

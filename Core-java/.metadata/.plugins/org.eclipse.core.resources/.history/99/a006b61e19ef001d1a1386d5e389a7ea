@@ -1,0 +1,20 @@
+package com.simpli;
+
+public class EmpInfo {
+	int id;
+	String name;
+	int salary = 5000;
+	
+	// method to return tax amount
+	float getTaxAmount(){
+		
+		float tax =  this.salary * 0.1f;
+		
+		return tax;
+	}
+	
+	void incrementSalaryBy(int value){
+		this.salary = this.salary + value;
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.simpli;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		OuterClass outtClass1 = new OuterClass();
+		OuterClass1.Class1 c1 = outrClass.new InnnerClass(); 
+	    c1.display();
+	
+	
+	}
+
+}

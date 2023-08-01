@@ -1,0 +1,28 @@
+package Module1;
+
+class Student{
+	int registration_no;
+	String StudentName;
+	
+	Student(int regno, String name){
+		this.registration_no = regno;
+		this.StudentName = name;
+	}
+}
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+	
+		Student[] arr = new Student[5];
+		
+		arr[0] = new Student(12341, "Manish");
+		arr[1] = new Student(12342, "Rahul");
+		arr[2] = new Student(12343, "Simran");
+		arr[3] = new Student(12344, "Smita");
+		arr[4] = new Student(12345, "Mathew");
+		
+
+	}
+
+}

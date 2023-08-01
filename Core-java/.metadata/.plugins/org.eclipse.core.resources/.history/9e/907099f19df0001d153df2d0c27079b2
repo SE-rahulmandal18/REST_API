@@ -1,0 +1,9 @@
+package simpli.com;
+
+public class FileReadWriteAppend {
+
+	public FileReadWriteAppend() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

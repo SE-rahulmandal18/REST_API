@@ -1,0 +1,9 @@
+package com.simpli;
+
+public class TestStudentMark {
+
+	public TestStudentMark() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

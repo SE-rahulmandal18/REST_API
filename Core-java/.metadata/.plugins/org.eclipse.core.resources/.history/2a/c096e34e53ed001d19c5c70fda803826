@@ -1,0 +1,22 @@
+package demo;
+import java.util.*;
+
+class TestClass{  
+    //private variable and method
+    int num=100;  
+    void printMessage(){System.out.println("Hello java");}  
+     
+}  
+  
+
+public class privateAccessSpecifier {
+
+	public static void main(String[] args) {
+		TestClass obj=new TestClass();  
+		   System.out.println(obj.num);//try to access private data member - Compile Time Error  
+		   obj.printMessage();//Accessing private method - Compile Time Error  
+		   } 
+
+	}
+
+}

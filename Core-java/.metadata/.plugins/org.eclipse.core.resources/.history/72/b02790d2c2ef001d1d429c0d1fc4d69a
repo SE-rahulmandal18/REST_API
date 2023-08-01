@@ -1,0 +1,73 @@
+//package demo;
+//
+//public class Geek {
+//
+//	public static void main(String[] args) {
+//		Son s = new Son();
+//		Daughter d = new Daughter();
+//		s.disp();
+//		d.disp();
+//	}
+//}
+//
+//abstract class Father {
+//	
+//	 void disp() {
+//		 System.out.println("dkn.x");
+//	 }
+//}
+//
+//class Son extends Father{
+//	void disp() {
+//		System.out.println("Abstract method is defined in subsclass son");
+//	}
+//}
+//class Daughter extends Father{
+//	void disp() {
+//		System.out.println("Abastract method is defined in subclass daughter");
+//	}
+//}
+
+//package demo;
+
+public class Geek {
+
+	public static void main(String[] args) {
+		//Son s = new Son();
+		Daughter d = new Daughter();
+		d.disp();
+		d.hello();
+		d.disp();
+	}
+}
+//
+//abstract class Father {
+//	
+//	 void hello() {
+//		 System.out.println("this is java program");
+//	 }
+//}
+
+
+abstract class Father {
+	
+	 abstract void hello();
+	 abstract void disp();
+	 
+}
+
+
+abstract class Son extends Father{
+	void disp() {
+		System.out.println("Abstract method is defined in subsclass son");
+	}
+}
+class Daughter extends Father{
+	void disp() {
+		System.out.println("Abastract method is defined in subclass daughter");
+	}
+	void hello() {
+		System.out.println("kejlsjorj;o");
+	}
+}
+

@@ -1,0 +1,18 @@
+package com.simpli.util;
+
+import com.simpli.fruits.Apple;
+public class AccessModifierMain {
+
+	public static void main(String[] args) {
+		
+   Apple apple1 = new Apple();
+   
+   //System.out.println("Apple's price= "+ apple1.price)); //compiler error for access permission
+   
+   //System.out.println("Apple's weigth= "+ apple1.weight); //compiler error for access permission
+	
+
+   System.out.println("Inside com.simpli.util package Apple's weigth= "+ apple1.color);
+	}
+
+}

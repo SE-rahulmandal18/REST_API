@@ -1,0 +1,6 @@
+package com.simpli;
+
+abstract class Class3 {
+ 
+	abstract public void display3();
+}

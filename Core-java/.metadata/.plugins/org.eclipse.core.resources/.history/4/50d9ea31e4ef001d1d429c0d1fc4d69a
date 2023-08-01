@@ -1,0 +1,116 @@
+package demo;
+
+public class stringDemo {
+
+	public static void main(String[] args) {
+		//methods of strings
+	    System.out.println("Methods of Strings");
+	  	
+	    String str = new String("Hello World Program");
+	    System.out.println(str.length());
+	    
+	    
+	    String sub=new String("Welcome");
+		System.out.println(sub.substring(2));
+
+		//String Comparison
+		String s1="INDIA IS MY COUNTRY";
+		String s2="india is my country";
+		System.out.println(s1.compareTo(s2));
+
+		//IsEmpty
+		String s4="";
+		String s3="JavaTutorial";
+		System.out.println(s4.isEmpty());
+		System.out.println(s3.isEmpty());
+
+		//toLowerCase
+		String s5="Hello";
+		System.out.println(s1.toLowerCase());
+		
+		//replace
+		String s6="Heldo";
+		String replace=s2.replace('d', 'l');
+		System.out.println(replace);
+
+		//equals
+		String x="Welcome to Java";
+		String y="WeLcOmE tO JaVa";
+		System.out.println(x.equals(y));
+ 
+		System.out.println("\n");
+		System.out.println("Creating StringBuffer");
+		//Creating StringBuffer and append method
+		StringBuffer s=new StringBuffer("Welcome to Java!");
+		s.append("Enjoy your learning");
+		System.out.println(s);
+
+		//insert method
+		s.insert(0, 'w');
+		System.out.println(s);
+
+		//replace method
+		StringBuffer sb=new StringBuffer("Hello");
+		sb.replace(0, 2, "hEl");
+		System.out.println(sb);
+
+		//delete method
+		sb.delete(0, 1);
+		System.out.println(sb);
+		
+		//StringBuilder
+		System.out.println("\n");
+		System.out.println("Creating StringBuilder");
+		
+		 StringBuilder builder=new StringBuilder("hello");  
+	        builder.append("java");  
+	        System.out.println(builder);
+
+		System.out.println(builder.delete(0, 1));
+
+		System.out.println(builder.insert(1, "Welcome"));
+
+		System.out.println(builder.reverse());
+				
+		//conversion	
+		System.out.println("\n");
+		System.out.println("Conversion of Strings to StringBuffer and StringBuilder");
+		
+		String str1 = "Hello";
+        
+        // conversion from String object to StringBuffer 
+        StringBuffer sbr = new StringBuffer(str); 
+        sbr.reverse(); 
+        System.out.println("String to StringBuffer");
+        System.out.println(sbr); 
+          
+        // conversion from String object to StringBuilder 
+        StringBuilder sbl = new StringBuilder(str); 
+        sbl.append("world"); 
+        System.out.println("String to StringBuilder");
+        System.out.println(sbl);              		
+	
+	
+	
+        //conversion
+		System.out.println("\n\n***\n");
+		System.out.println("Conversion of Strings to StringBuffer and StringBuilder");
+		String str6 = "Hello";
+		
+		// conversion from String object to StringBuffer 
+        StringBuffer sbr10 = new StringBuffer(str);         
+        System.out.println("String to StringBuffer" );
+        System.out.println(sbr)
+        ;
+//// conversion from String object to StringBuilder
+//		StringBuilder sb10 = new StringBuilder(str);
+//		sbl.append("world");
+//		System.out.println("String to StringBuilder");
+//		System.out.println(sbl);
+//	
+	}
+
+	    		
+
+	}
+

@@ -1,0 +1,13 @@
+package com.simpli;
+
+public class OuterClass {
+    int price;
+    
+    class InnnerClass{
+    	int age;
+    	
+    	public void display() {
+    		System.out.println("I am inner class");
+    	}
+    }
+}

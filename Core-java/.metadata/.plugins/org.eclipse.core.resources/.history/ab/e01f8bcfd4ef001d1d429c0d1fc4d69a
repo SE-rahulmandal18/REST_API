@@ -1,0 +1,19 @@
+package com.simpli;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// Class1 c1 = new Class1(); WONT WORK
+		OuterClass outClass1 = new  OuterClass();
+		
+		OuterClass.InnnerClass c1 = outClass1.new InnnerClass();
+		
+		c1.display();
+		
+		c1.displayPriceOfOuterClass();
+	}
+
+ 
+
+}

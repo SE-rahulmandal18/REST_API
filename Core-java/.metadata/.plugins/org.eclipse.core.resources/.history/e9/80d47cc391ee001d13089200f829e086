@@ -1,0 +1,7 @@
+package com.simpli.fruits;
+
+public class Apple {
+    private int price;
+    
+    int weight=76; //default access
+}

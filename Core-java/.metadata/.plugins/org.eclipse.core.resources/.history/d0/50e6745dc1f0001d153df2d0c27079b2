@@ -1,0 +1,9 @@
+package simpli.com;
+
+public class InheritanceDemo {
+
+	public InheritanceDemo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

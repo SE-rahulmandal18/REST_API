@@ -1,0 +1,58 @@
+package demo;
+
+public class stringFunction {
+
+	public static void main(String[] args) {
+		// initilasing string function
+		String string_var1 = "string function program";
+		String string_var2 = "string function";
+		
+        // commonly used string function are
+		System.out.println("String opersation are: ");
+		
+		// getting character at specific position
+		System.out.println(string_var1.charAt(5));
+		
+		// getting unicode(ASCII) character at specific index;
+		System.out.println(string_var1.codePointAt(3));
+		
+		// getting unicode character before specific index
+		System.out.println(string_var1.codePointBefore(1));
+		
+		// getting unicode character b/w the indexs given
+ 		System.out.println(string_var1.codePointCount(0, 5));
+ 		
+ 		
+ 		// compare two string lexicographically i.e based on unicode value
+ 		System.out.println("\nstring comparision function: ");
+		
+ 		System.out.println(string_var1.compareTo(string_var2));
+ 		
+ 		// compare two string lexicographically ignore the case
+ 		System.out.println(string_var1.compareToIgnoreCase(string_var2));
+ 		
+ 		// append a string with another 
+ 		System.out.println("\nconcatenated string: ");
+ 		System.out.println(string_var1.concat(string_var2));
+ 		
+ 		//check whether a sting contain another string
+ 		System.out.println(string_var1.contains(string_var2));
+ 		
+ 		//check whether a sting ends wiht specfic character
+ 		System.out.println(string_var1.endsWith("grams"));
+ 		
+ 		//compare and return true if both string are equal
+ 		System.out.println(string_var1.equals(string_var2));
+ 		
+ 		//compare and return true if both string are equal ignore the case
+ 		System.out.println(string_var1.equalsIgnoreCase(string_var2));
+ 		
+ 		//Hash code is computed like this
+ 		//s[0]*31^(n-1)+s[1]*31^(n-2)+.....s[n-1];
+ 		System.out.println(string_var1.hashCode());
+ 		
+ 		System.out.println(string_var1.indexOf("program"));
+ 		
+	}
+
+}

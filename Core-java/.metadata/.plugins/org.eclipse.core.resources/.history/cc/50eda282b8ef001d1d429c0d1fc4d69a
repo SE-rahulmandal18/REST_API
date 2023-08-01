@@ -1,0 +1,30 @@
+package demo;
+
+public class InterfaceDemo {
+
+	public static void main(String[] args) {
+		Son s = new Son();
+		s.display();
+		
+	}
+
+}
+
+interface Father{
+	
+	public static final int marks = 100;  //public static final is by default
+	int roll = 101 ;                         //public static final is by default
+	
+	void display();                             // by default abstract method	
+}
+
+class Son implements Father{
+	int marks1 = 200;
+	int newMarks = Father.marks + marks1;
+	
+	public void display(){
+		System.out.println("new marks: "+ newMarks);
+		System.out.println("roll: "+ Father.roll);
+	}
+	
+}

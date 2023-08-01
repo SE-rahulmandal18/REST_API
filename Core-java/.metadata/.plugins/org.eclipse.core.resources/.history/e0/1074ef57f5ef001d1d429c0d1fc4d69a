@@ -1,0 +1,22 @@
+package com.simpli;
+
+import java.io.File;
+
+public class Main {
+
+	public static void main(String[] args)throws Exception {
+		
+		File f = new File("C:\\Users\\rahul\\OneDrive\\Documents//a1000.txt");
+		
+	boolean created = 	f.createNewFile();
+	
+	if (created) {
+		
+		System.out.println("file creation success");
+	}else {
+
+		System.out.println("file creation success");
+	}
+	}
+
+}

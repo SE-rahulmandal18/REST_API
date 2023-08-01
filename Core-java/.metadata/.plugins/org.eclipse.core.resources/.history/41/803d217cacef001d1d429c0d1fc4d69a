@@ -1,0 +1,29 @@
+package demo;
+
+public class Geek {
+
+	public static void main(String[] args) {
+		Son s = new Son();
+		Daughter d = new Daughter();
+		s.disp();
+		d.disp();
+	}
+}
+
+abstract class Father {
+	
+	 void disp() {
+		 System.out.println("kd.x");
+	 }
+}
+
+class Son extends Father{
+	void disp() {
+		System.out.println("Abstract method is defined in subsclass son");
+	}
+}
+class Daughter extends Father{
+	void disp() {
+		System.out.println("Abastract method is defined in subclass daughter");
+	}
+}

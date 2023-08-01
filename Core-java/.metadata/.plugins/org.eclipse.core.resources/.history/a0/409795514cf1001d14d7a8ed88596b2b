@@ -1,0 +1,64 @@
+package com.simpli;
+
+import java.util.Scanner;
+
+public class StudentMark {
+      public static void main(String[] ags) {
+    	// Declaring & initializing variable here 
+    	  Scanner sc  = new Scanner(System.in);
+    	  float physics_marks, chemistry_marks, maths_marks;
+    	
+    	  System.out.println("Enter physics marks out of 100?");
+    	  physics_marks = sc.nextFloat();
+    	  System.out.println("Enter chemestry marks out of 100?");
+    	  chemistry_marks = sc.nextFloat();
+    	  System.out.println("Enter maths marks out of 100?");
+    	  maths_marks = sc.nextFloat();
+    	  
+    	  float total_marks = getTotal_marks(physics_marks, chemistry_marks, maths_marks);
+          System.out.println("Totoal marks out of 300 is" +total_marks );
+      
+          float percentage_marks = getPercentage(physics_marks, chemistry_marks, maths_marks);  
+          System.out.println("percentage of marks obtained is "+ percentage_marks);
+          
+          String grade = getGrade(percentage_marks);
+          System.out.println("Grade of the student: "+ grade);
+      }
+      
+
+	private static String getGrade(float percentage) {
+		// method to calculate grade
+		
+		if(percentage >= 80) {
+			return "A+";
+		}
+		else if( percentage >= 60 && percentage <=79){
+			return "A";
+		}
+		else if( percentage >=50 && percentage <=59) {
+			return "B";
+		}
+		else {
+			return "C";
+		}
+		
+	}
+
+
+	private static float getPercentage(float physics_marks, float chemistry_marks, float maths_marks) {
+		// method to calculate percentage marks
+		float marks_total = physics_marks + chemistry_marks + maths_marks;
+		float percentage = (marks_total/300) * 100;
+		return percentage;
+		
+	}
+
+
+	private static float getTotal_marks(float physics_marks, float chemistry_marks, float maths_marks) {
+		// method to calculate total marks
+		float marks_total = physics_marks + chemistry_marks + maths_marks;
+		
+		return marks_total;
+	}
+
+}

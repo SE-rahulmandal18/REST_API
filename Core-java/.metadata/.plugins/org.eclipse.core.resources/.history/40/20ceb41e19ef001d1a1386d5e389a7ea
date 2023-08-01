@@ -1,0 +1,22 @@
+package com.simpli;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		EmpInfo e1 = new EmpInfo();
+		
+		e1.salary = 15000;
+		
+		float tax1 = e1.getTaxAmount();
+		
+		System.out.println("Emp e1's tax = "+tax1);
+   
+		e1.incrementSalaryBy(3000);
+        float tax2 = e1.getTaxAmount();
+		System.out.println("Emp e1's tax after increment= "+tax2);
+   
+	
+	}
+
+}
