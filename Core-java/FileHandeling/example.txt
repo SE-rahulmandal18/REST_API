@@ -1,0 +1,4 @@
+Hello world!
+This is a sample file.
+We are writing to it using Java.
+This is an appended line.
