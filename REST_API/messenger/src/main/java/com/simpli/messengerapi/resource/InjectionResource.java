@@ -4,6 +4,9 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
+import com.simpli.messengerapi.model.ParamBeanFilter;
+
+import jakarta.ws.rs.BeanParam;
 import jakarta.ws.rs.CookieParam;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.HeaderParam;
@@ -21,14 +24,12 @@ public class InjectionResource {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	@Path("annotation")
-	public String getInjectionAnnotation(@MatrixParam("param") String matrixParam,
-			@HeaderParam("authSessionId") String authSessionId, @HeaderParam("baseURI") String baseURI,
-			@CookieParam("name") String name) {
+	public String getInjectionAnnotation(@BeanParam ParamBeanFilter beanParam) {
 
-		return "Matrix Param=" + matrixParam + 
-				" Header Param Value= " + authSessionId + 
-				" baseURI= " + baseURI+
-				" Cookie value= " + name;
+		return "Matrix Param=" + beanParam.getMatrixParam() + 
+				" Header Param Value= " + beanParam.getAuthSessionId() + 
+				" baseURI= " + beanParam.getBaseURI()+
+				" Cookie value= " + beanParam.getName();
 	}
 	
 	
