@@ -7,10 +7,7 @@ import java.util.Map;
 import com.simpli.messengerapi.model.ParamBeanFilter;
 
 import jakarta.ws.rs.BeanParam;
-import jakarta.ws.rs.CookieParam;
 import jakarta.ws.rs.GET;
-import jakarta.ws.rs.HeaderParam;
-import jakarta.ws.rs.MatrixParam;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.Context;
@@ -43,7 +40,7 @@ public class InjectionResource {
 //	
 //	Collection<List<String>> list =  headers.values();
 //	System.out.println(list);
-	
+//	
 	String URI = info.getAbsolutePath().toString();
 	            
 	return "Absolute URI= "+ URI;
