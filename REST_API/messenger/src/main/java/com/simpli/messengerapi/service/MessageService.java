@@ -53,6 +53,10 @@ public class MessageService {
 		
 		List<Message> list = new ArrayList<Message>(messages.values());
 		
+		if(start + size > list.size()) {
+			return new ArrayList<Message>();
+		}
+		
 		return list.subList(start, start+size);
 	}
 }
